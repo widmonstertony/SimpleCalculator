@@ -29,26 +29,40 @@
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="0">
+            android:layout_height="wrap_content" android:layout_weight="0">
         <Button
-                android:text="Button"
+                android:text="+"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/plus" android:layout_weight="1"/>
         <Button
-                android:text="Button"
+                android:text="-"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/minus" android:layout_weight="1"/>
         <Button
-                android:text="Button"
+                android:text="*"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/multiply" android:layout_weight="1"/>
         <Button
-                android:text="Button"
+                android:text="/"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/divice" android:layout_weight="1"/>
         <Button
-                android:text="Button"
+                android:text="CLR"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/clear" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <TextView
+                android:text="Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/result_title" android:textSize="24sp"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/result" android:textSize="24sp"
+                android:hint="(your result will appear here)" android:gravity="center"/>
     </LinearLayout>
 </LinearLayout>
